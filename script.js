@@ -7,12 +7,15 @@ var nightAdjArr = ['happy', 'peaceful', 'wonderful', 'inspirational', 'bright', 
 var driveAdjArr = ['dangerously', 'aggressively', 'carefully', 'drunk', 'fast', 'erraticaly', 'poorly', 'dominantly', 'recklessly', 'reasonably']
 
 
+function randomWeatherForecast() {
 
-// function randomWeatherForecast() {
+    var summaryAdj = summaryAdjArr[Math.floor(Math.random() * summaryAdjArr.length)];
+    var nightAdj = nightAdjArr[Math.floor(Math.random() * nightAdjArr.length)];
+    var dayAdj = dayAdjArr[Math.floor(Math.random() * dayAdjArr.length)];
+    var driveAdj = driveAdjArr[Math.floor(Math.random() * driveAdjArr.length)];
 
-//     return `Tomorrow, the weather will be ${summaryAdj}! While the night is ${nightAdj}, the day will be ${dayAdj}. So please drive ${driveAdj}!`
+    console.log(`Tomorrow, the weather will be ${summaryAdj}! While the night is ${nightAdj}, the day will be ${dayAdj}. So please drive ${driveAdj}!`)
 
-// }
+}
 
-// randomWeatherForecast()
-
+randomWeatherForecast()
